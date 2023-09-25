@@ -7,6 +7,21 @@ This script accepts a file with a list of dbSNP RSIDs and outputs a TSV file wit
 ###Requirements:
 python version 3.10
 
+`variant-tools` package: an integrated annotation and analysis package for next-generation sequencing data. You can install it using pip with the following command:
+
+```
+pip install variant-tools
+```
+
+see [https://pypi.org/project/variant-tools/](https://pypi.org/project/variant-tools/)
+
+Alternatively, if you are using a conda environment, you can install variant-tools with the following command:
+
+```
+conda install variant_tools -c bioconda -c conda-forge
+```
+
+
 ###Usage:
 ```bash
 
