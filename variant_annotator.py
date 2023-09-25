@@ -23,8 +23,8 @@ def get_variant_annotation(species, variant_id):
 
 def main():
     parser = argparse.ArgumentParser(description='Variant annotation command line utility')
-    parser.add_argument('-input_file', type=str, help='Input file containing list of dbSNP RSIDs')
-    parser.add_argument('-output_file', type=str, help='Output file containing annotations')
+    parser.add_argument('--input_file', type=str, help='Input file containing list of dbSNP RSIDs', required=True)
+    parser.add_argument('--output_file', type=str, help='Output file containing annotations', required=True)
     parser.add_argument('--species', type=str, help='Optional species name/alias, default=human', required=False, default='human')
     parser.add_argument("--log", help="Optional logging level. Example --log debug, default=warning", default='warning')
 

@@ -17,9 +17,9 @@ Variant annotation command line utility
 
 options:
   -h, --help            show this help message and exit
-  -input_file INPUT_FILE
+  --input_file INPUT_FILE
                         Input file containing list of dbSNP RSIDs
-  -output_file OUTPUT_FILE
+  --output_file OUTPUT_FILE
                         Output file containing annotations
   --species SPECIES     Optional species name/alias, default=human
   --log LOG             Optional provide logging level. Example --log debug, default=warning
@@ -29,7 +29,7 @@ options:
 ### Eaxmple usage:
 ```bash
 
-python variant_annotator.py -input_file=input_bto.txt -output_file=output_bto.txt
+python variant_annotator.py --input_file=input_bto.txt --output_file=output_bto.txt
 
 ```
 
