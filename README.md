@@ -2,7 +2,7 @@
 
 ### Description:
 
-This script accepts a file with a list of dbSNP RSIDs and outputs a TSV file with annotations. It queries the Ensembl API using this endpoint https://rest.ensembl.org/documentation/info/vep_id_get and returns the following fields: start, end, most_severe_consequence and a unique list of genes (pulled from the gene_symbol value in the list of transcript_consequences). If multiple variants are returned, it uses the first one. If a RSID is not found in Ensembl it returns a blank line.
+This script accepts a file with a list of dbSNP RSIDs and outputs a TSV file with annotations. Using the [variant-tools](https://vatlab.github.io/vat-docs/) package it queries the Ensembl API using this endpoint https://rest.ensembl.org/documentation/info/vep_id_get and returns the following fields: start, end, most_severe_consequence and a unique list of genes (pulled from the gene_symbol value in the list of transcript_consequences). If multiple variants are returned, it uses the first one. If a RSID is not found in Ensembl it returns a blank line.
 
 ### Requirements:
 python version 3.10
