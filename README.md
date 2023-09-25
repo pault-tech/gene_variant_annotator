@@ -1,13 +1,13 @@
 # variant_annotator.py
 
-###Description:
+### Description:
 
 This script accepts a file with a list of dbSNP RSIDs and outputs a TSV file with annotations. It queries the Ensembl API using this endpoint https://rest.ensembl.org/documentation/info/vep_id_get and returns the following fields: start, end, most_severe_consequence and a unique list of genes (pulled from the gene_symbol value in the list of transcript_consequences). If multiple variants are returned, it uses the first one. If a RSID is not found in Ensembl it returns a blank line.
 
-###Requirements:
+### Requirements:
 python version 3.10
 
-###Usage:
+### Usage:
 ```bash
 
 variant_annotator.py [-h] [-input_file INPUT_FILE] [-output_file OUTPUT_FILE]
@@ -26,20 +26,20 @@ options:
 
 ```
 
-###Eaxmple usage:
+### Eaxmple usage:
 ```bash
 
 python variant_annotator.py -input_file=input_bto.txt -output_file=output_bto.txt
 
 ```
 
-###Unit tests for the main functionality
+### Unit tests for the main functionality
 ```bash
 
 python -m unittest  variant_annotator_test.TestVariantAnnotation
 
 ```
 
-###Running in a github codespace:
+### Running in a github codespace:
 Open [pault-tech/bto_variant_annotator](https://github.com/pault-tech/bto_variant_annotator), then click the `Code` button, under `Codespaces` click, `Create codespace on main` to launch a new codespace instance.
 
