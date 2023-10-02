@@ -29,7 +29,7 @@ options:
 ### Eaxmple usage:
 ```bash
 
-python variant_annotator.py --input_file=input_bto.txt --output_file=output_bto.txt
+python variant_annotator.py --input_file=test_input1.txt --output_file=output.txt
 
 ```
 
@@ -41,5 +41,5 @@ python -m unittest  variant_annotator_test.TestVariantAnnotation
 ```
 
 ### Running in a github codespace:
-Open [pault-tech/bto_variant_annotator](https://github.com/pault-tech/bto_variant_annotator), then click the `Code` button, under `Codespaces` click, `Create codespace on main` to launch a new codespace instance.
+Open [pault-tech/gene_variant_annotator](https://github.com/pault-tech/gene_variant_annotator), then click the `Code` button, under `Codespaces` click, `Create codespace on main` to launch a new codespace instance.
 
